@@ -22,7 +22,7 @@ public class MainConfiguration
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder)
 	{
-		UriTemplateHandler uriHandler=new RootUriTemplateHandler("http://localhost:8080");
+		UriTemplateHandler uriHandler=new RootUriTemplateHandler("http://localhost:8888");
 		return builder.uriTemplateHandler(uriHandler).setReadTimeout(Duration.ofMillis(1000)).build();
 	}
 	

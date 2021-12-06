@@ -25,7 +25,7 @@ public class UserService implements IUserService{
 		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
 		 * Auto-generated catch block e.printStackTrace(); }
 		 */
-	  ResponseEntity<String> user=	restTemplate.getForEntity("/getOne/"+id,String.class);
+	  ResponseEntity<String> user=	restTemplate.getForEntity("/one/"+id,String.class);
 		return user.getBody();
 	}
 	
